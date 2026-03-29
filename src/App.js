@@ -9,8 +9,11 @@
  *  • Live bin count badge via Firebase (optional)
  *  • Keyboard accessibility (Escape closes drawer)
  */
-import { useEffect } from "react";
+import "./firebase";
+import React, { useEffect } from "react";
 import "./App.css";
+import "leaflet/dist/leaflet.css";
+import MapView from "./MapView";
 
 /* ── CONFIG ─────────────────────────────────────────────────────── */
 const HEADER_CONFIG = {
@@ -588,7 +591,6 @@ function initHeader() {
 
 
 function App() {
-
   useEffect(() => {
     initHeader();
     showHeaderToast("🚀 WasteWatch loaded!", "success");
@@ -603,7 +605,7 @@ function App() {
 
       <div className="section" id="map">
         <h1>🗺️ Bins Map</h1>
-        <p>Map integration will go here.</p>
+      <MapView />
       </div>
 
       <div className="section" id="reports">
