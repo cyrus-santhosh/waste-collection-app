@@ -3,6 +3,9 @@
 > Dispose your waste on **your** schedule. Find the nearest smart bins, check availability in real time, and say goodbye to missed collection timings forever.
 
 ---
+ Live Demo
+
+🚀 **[Try the App Here](https://waste-collection-app-5e05c.web.app)**
 
 ## 📖 Overview
 
